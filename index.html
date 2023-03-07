@@ -1,0 +1,52 @@
+<!--mardi soir-->
+
+<head>
+    <meta charset="UTF-8">
+	<title>Comparateur de prix de composants électroniques</title>
+    <link rel="shortcut icon" href="https://github.com/berru-g/Histoire-audio/blob/master/img/book.gif?raw=true"/>
+
+    <meta name=viewport content="width=device-width, initial-scale=1">
+ 
+    <meta name=description
+    content="Price component comparator">
+  <meta name=author content>
+  <meta name=keywords
+    content="component, component electronic, electronic component, comparator component, electronic price comparator">
+    <meta property=og:url content=https://github.com/berru-g/>
+  <link rel=canonical href=https://github.com/berru-g/>
+
+    <link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cheerio@1.0.0/dist/cheerio.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+	<header>
+		<a href="https://github.com/berru-g/">
+			<img src="logo.png" alt="Component-comparator" title="component-comparator" >
+		</a>
+		<nav>
+			<select>
+				<option value="https://www.taydaelectronics.com/">Tayda Electronics</option>
+				<option value="https://www.amazon.com/">Amazon</option>
+				<option value="https://www.aliexpress.com/">AliExpress</option>
+			</select>
+		</nav>
+	</header>
+<body>
+    <main>
+		<div>
+			<input type="text" id="searchInput" placeholder="Rechercher..." title="research price component" >
+			<button id="searchButton">Comparer</button>
+		</div>
+		<div class="results" id="resultsDiv" title="résultat de compararteur de composant" >
+		</div>
+	</main>
+</body>
+<footer>
+    <iframe src="https://rcm-eu.amazon-adsystem.com/e/cm?o=8&p=48&l=ur1&category=electronics&banner=1QQS1EMDA6ZHNZJK0482&f=ifr&linkID=fd9049298f7d836692ba50992a7e9546&t=makeandplay24-21&tracking_id=makeandplay24-21" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+
+</footer>
