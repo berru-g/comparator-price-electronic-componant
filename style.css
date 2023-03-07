@@ -47,7 +47,7 @@ input[type="text"] {
     width: 80%;
 }
 
-button {
+#searchButton {
     font-size: 1rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -56,7 +56,7 @@ button {
     color: #fff;
     cursor: pointer;
 }
-button:hover {
+#searchButton:hover {
     background-color: #1017da;
 }
 
@@ -98,3 +98,22 @@ iframe{
     margin-bottom:0%;
     margin-left:center;     
 }
+  /* Footer */
+  footer {
+    background: #3e3d3d;
+    color: #dbdbdb;
+    font-size: 12px;
+    margin-bottom:0%;
+    padding: 20px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
