@@ -1,11 +1,16 @@
 import * as axios from "https://cdn.skypack.dev/axios@1.3.4";
 import * as cheerio from "https://cdn.skypack.dev/cheerio@1.0.0-rc.12";
 import $ from "https://cdn.skypack.dev/jquery@3.6.3";
+const axios = require('axios');
+const axios = require('cheerio');
+const axios = require('jquery');
 
 const comparePrices = () => {
     const searchTerm = document.getElementById("search-term").value;
     const resultsDiv = document.getElementById("results");
-  
+    //const compareBtn = document.getElementById("compare-btn");
+    //compareBtn.addEventListener("click", comparePrices);
+
     // Clear previous results
     resultsDiv.innerHTML = "";
   
@@ -16,7 +21,7 @@ const comparePrices = () => {
       AliExpress: `https://www.aliexpress.com/wholesale?SearchText=${searchTerm}`,
     };
   
-    // Create array to store prices
+    // Create array to store prices 
     const prices = [];
   
     // Loop through each search URL and extract prices
@@ -87,6 +92,6 @@ const comparePrices = () => {
   };
   
   // Add event
-  const compareBtn = document.getElementById("compare-btn");
-  compareBtn.addEventListener("click", comparePrices);
+const compareBtn = document.getElementById("compare-btn");
+compareBtn.addEventListener("click", comparePrices);
   
