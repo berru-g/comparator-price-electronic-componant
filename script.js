@@ -1,3 +1,7 @@
+import * as axios from "https://cdn.skypack.dev/axios@1.3.4";
+import * as cheerio from "https://cdn.skypack.dev/cheerio@1.0.0-rc.12";
+import $ from "https://cdn.skypack.dev/jquery@3.6.3";
+
 const comparePrices = () => {
     const searchTerm = document.getElementById("search-term").value;
     const resultsDiv = document.getElementById("results");
