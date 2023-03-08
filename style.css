@@ -145,6 +145,7 @@ iframe{
   .categorie .content {
     width: 55%;
     padding: 100px 0 0 30px;
+    height: auto;
   }
   .btn {
     font-size: 1rem;
@@ -159,12 +160,19 @@ iframe{
     background-color: #1017da;
     color: #fff;
 }
+.promo {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  color:#1017da;
+}
   /* Footer */
   .footer {
     background: #3e3d3d;
     color: #dbdbdb;
     font-size: 12px;
     padding: 20px 0;
+    
   }
   
   .footer-inner {

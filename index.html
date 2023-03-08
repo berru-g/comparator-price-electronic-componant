@@ -1,64 +1,77 @@
 <!--mardi soir-->
-<head>
-    <meta charset="UTF-8">
-	<title>Comparateur de prix de composants électroniques</title>
-    <link rel="shortcut icon" href="src\logo-component-comparator.png"/>
 
-    <meta name=viewport content="width=device-width, initial-scale=1">
- 
-    <meta name=description
-    content="Price component comparator">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparateur de prix de composants électroniques</title>
+  <link rel="shortcut icon" href="src\logo-component-comparator.png" />
+
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <meta name=description content="Price component comparator">
   <meta name=author content>
   <meta name=keywords
     content="component, component electronic, electronic component, comparator component, electronic price comparator">
-    <meta property=og:url content=https://github.com/berru-g/>
-  <link rel=canonical href=https://github.com/berru-g/>
+  <meta property=og:url content=https://github.com/berru-g />
+  <link rel=canonical href=https://github.com/berru-g />
 
-    <link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cheerio@1.0.0/dist/cheerio.min.js"></script>
-    <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cheerio@1.0.0/dist/cheerio.min.js"></script>
+  <script src="app.js"></script>
 </head>
-<body>
-	<header>
-		<a href="https://github.com/berru-g/">
-			<img id="logo" src="src\around-the-world.gif" alt="Component-comparator" title="component-comparator" > CC
-		</a>
-		<nav>
-			<select>
-				<option value="https://www.taydaelectronics.com/">Tayda</option>
-				<option value="https://www.amazon.com/">Amazon</option>
-				<option value="https://www.aliexpress.com/">AliExpress</option>
-			</select>
-		</nav>
-	</header>
-<body>
 
-     <!-- categorie -->
-  <section class="categorie dark">
-    <main>
-		<div>
-			<input type="text" id="searchInput" placeholder="Rechercher..." title="research price component" >
-			<button id="searchButton">Comparer</button>
-		</div>
-		<div class="results" id="resultsDiv" title="résultat de compararteur de composant" >
-		</div>
-	</main>
-    <div class="content">
-      <h2>Welcome to the component comparator</h2>
-      <p>Component comparator is a tool for comparate price component on amazon, aliexpress and tayda electronique.
-        Create your tool at least expensive  </p>
-      <a href="https://github.com/berru-g/" class="btn">
-        Visit exemple project <i class=""></i>
-      </a>
+<body>
+  <header>
+    <a href="https://github.com/berru-g/">
+      <img id="logo" src="src\around-the-world.gif" alt="Component-comparator" title="component-comparator"> CC
+    </a>
+    <nav>
+      <select>
+        <option value="https://www.taydaelectronics.com/">Tayda</option>
+        <option value="https://www.amazon.com/">Amazon</option>
+        <option value="https://www.aliexpress.com/">AliExpress</option>
+      </select>
+    </nav>
+  </header>
+
+  <body>
+
+    <!-- categorie -->
+    <section class="categorie dark">
+      <main>
+        <div>
+          <input type="text" id="searchInput" placeholder="Potentiometer 10k..." title="searchTerm">
+          <button id="searchButton">Comparer</button>
+        </div>
+        <div class="results" id="resultsDiv" title="résultat de compararteur de composant">
+        </div>
+      </main>
+      <div class="content">
+        <h2>Welcome to the component comparator</h2>
+        <p>Component comparator is a tool for comparate price component on amazon, aliexpress and tayda electronique.
+          Create your tool at least expensive </p>
+        <a href="https://github.com/berru-g/" class="btn">
+          Visit exemple project <i class=""></i>
+        </a>
+      </div>
+    </section>
+    <div style="promo">
+      <h4>least expensive</h4>
+<!--      <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin"
+        style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
+        src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=FR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=makeandplay24-21&language=fr_FR&marketplace=amazon&region=FR&placement=B07Q169TBK&asins=B07Q169TBK&linkId=1be03924a74d9ae34dad1b53acfdb0b4&show_border=true&link_opens_in_new_window=true"></iframe>
+      <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin"
+        style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
+        src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=FR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=makeandplay24-21&language=fr_FR&marketplace=amazon&region=FR&placement=B09HGBSG1W&asins=B09HGBSG1W&linkId=4135bcfd0c3cdf48bc4607c7efced53d&show_border=true&link_opens_in_new_window=true"></iframe>
+      <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin"
+        style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
+        src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=FR&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=makeandplay24-21&language=fr_FR&marketplace=amazon&region=FR&placement=B09TVL186R&asins=B09TVL186R&linkId=b0201c4de6ab3264d22807e902b8ca85&show_border=true&link_opens_in_new_window=true"></iframe>-->
     </div>
-  </section>
-</body>
-<!-- Footer -->
-<footer class="footer">
+  </body>
+  <footer class="footer">
     <div class="footer-inner">
       <div><i class=""></i> Fr</div>
       <ul>
@@ -70,5 +83,5 @@
       </ul>
     </div>
   </footer>
-  
+
   </html>
