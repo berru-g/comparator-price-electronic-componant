@@ -5,7 +5,6 @@
 a {
     text-decoration: none;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -37,7 +36,6 @@ body {
       transform: skewX(0deg);
     }
   }*/
-
 header {
     display: flex;
     justify-content: space-between;
@@ -46,18 +44,15 @@ header {
     color: #333;
     padding: 1rem;
 }
-
 #logo{
     max-width: 3rem;
     height: auto;
 }
-
 header a {
     color: #fff;
     text-decoration: none;
     margin-right: 1rem;
 }
-
 header nav select {
     font-size: 1rem;
     padding: 0.5rem;
@@ -65,11 +60,9 @@ header nav select {
     border: none;
     background-color: #fff;
 }
-
 main {
     padding: 1rem;
 }
-
 input[type="text"] {
     font-size: 1rem;
     padding: 0.5rem;
@@ -78,7 +71,6 @@ input[type="text"] {
     margin-right: 1rem;
     width: 80%;
 }
-
 #searchButton {
     font-size: 1rem;
     padding: 0.5rem;
@@ -91,7 +83,6 @@ input[type="text"] {
 #searchButton:hover {
     background-color: #0008ff;
 }
-
 .results {
     display: none;
     margin-top: 2rem;
@@ -99,7 +90,6 @@ input[type="text"] {
     background-color: #eee;
     border-radius: 0.25rem;
 }
-
 .result {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
@@ -109,12 +99,10 @@ input[type="text"] {
     align-items: center;
     justify-content: space-between;
 }
-
 .result img {
     height: 2rem;
     margin-right: 1rem;
 }
-
 .result a {
     color: #333;
     text-decoration: none;
@@ -130,8 +118,6 @@ iframe{
     margin-bottom:0%;
     margin-left:center;     
 }
-
-  /* categorie */
   .categorie {
     width: 100%;
     height: auto;
@@ -166,15 +152,12 @@ iframe{
   background-color: #fff;
   color:#1017da;
 }
-  /* Footer */
   .footer {
     background: #3e3d3d;
     color: #dbdbdb;
     font-size: 12px;
-    padding: 20px 0;
-    
+    padding: 20px 0;    
   }
-  
   .footer-inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -183,29 +166,24 @@ iframe{
     align-items: center;
     justify-content: space-between;
   }
-  
   .footer div {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-  }
-  
+  } 
   .footer div i {
     margin-right: 10px;
   }
-  
   .footer ul {
     display: flex;
     flex-wrap: wrap;
     color: #dbdbdb;
 
   }
-  
   .footer li {
     margin-right: 30px;
     margin-bottom: 20px;
-  }
-  
+  } 
   footer a {
     color: #dbdbdb;
   }
