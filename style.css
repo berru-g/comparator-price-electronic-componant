@@ -161,6 +161,9 @@ iframe{
   color: #fff;
 }
 /* Links */
+h3 {
+  color:#3e3d3d;
+}
 .links {
   background: #fff;
   color: #616161;
