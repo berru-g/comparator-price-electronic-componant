@@ -1,189 +1,204 @@
 * {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height:auto;
-    background-image: url('https://github.com/berru-g/Make-Play/blob/main/src/component.png?raw=true');
-    background-repeat: repeat-x;
-    background-size: 300px;
-  }
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height:auto;
+  background-image: url('https://github.com/berru-g/Make-Play/blob/main/src/component.png?raw=true');
+  background-repeat: repeat-x;
+  background-size: 300px;
+}
 /* Application de la classe d'animation 
 body {
-    background-image: url(https://github.com/berru-g/Make-Play/blob/main/src/component.png?raw=true);
-    background-size: cover;
-    background-position: center center;
-    animation-name: "wave";
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
- Définition de la classe d'animation 
+  background-image: url(https://github.com/berru-g/Make-Play/blob/main/src/component.png?raw=true);
+  background-size: cover;
+  background-position: center center;
+  animation-name: "wave";
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+Définition de la classe d'animation 
 @keyframes wave {
-    0% {
-      transform: skewX(0deg);
-    }
-    50% {
-      transform: skewX(20deg);
-    }
-    100% {
-      transform: skewX(0deg);
-    }
-  }*/
+  0% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}*/
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    color: #333;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #333;
+  padding: 1rem;
 }
+
 #logo{
-    max-width: 3rem;
-    height: auto;
+  max-width: 3rem;
+  height: auto;
 }
+
 header a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 1rem;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
 }
+
 header nav select {
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: none;
-    background-color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #fff;
 }
+
 main {
-    padding: 1rem;
+  padding: 1rem;
 }
+
 input[type="text"] {
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: none;
-    margin-right: 1rem;
-    width: 80%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  margin-right: 1rem;
+  width: 80%;
 }
+
 #searchButton {
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: none;
-    background-color: #1017da;
-    color: #fff;
-    cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #1017da;
+  color: #fff;
+  cursor: pointer;
 }
 #searchButton:hover {
-    background-color: #0008ff;
+  background-color: #0008ff;
 }
+
 .results {
-    display: none;
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: #eee;
-    border-radius: 0.25rem;
+  display: none;
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, .4);    
+  color: black;
+  border-radius: 0.25rem;
 }
-.result {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    background-color: #fff;
-    border-radius: 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.results {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .result img {
-    height: 2rem;
-    margin-right: 1rem;
+  height: 2rem;
+  margin-right: 1rem;
 }
+
 .result a {
-    color: #333;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .result span {
-    font-size: 1.25rem;
-    font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 iframe{
-    position:absolute;
-    align-items: center;
-    margin-bottom:0%;
-    margin-left:center;     
+  position:absolute;
+  align-items: center;
+  margin-bottom:0%;
+  margin-left:center;     
 }
-  .categorie {
-    width: 100%;
-    height: auto;
-   /* background: url('https://resize.elle.fr/article_1280/var/plain_site/storage/images/loisirs/livres/news/voici-le-livre-le-plus-vendu-en-france-en-2022-et-ce-n-est-pas-un-roman-4085975/98031195-1-fre-FR/Voici-le-livre-le-plus-vendu-en-France-en-2022-et-ce-n-est-pas-un-roman.jpg') no-repeat center center/cover;
-    filter: blur(4px);*/
-    background-color: #0068b881;
-    color: white;
-    font-size: medium;
-  }
-  
-  .categorie .content {
-    width: 55%;
-    padding: 100px 0 0 30px;
-    height: auto;
-  }
-  .btn {
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: none;
-    background-color: #fff;
-    color: #1017da;
-    cursor: pointer;
+
+/* categorie */
+.categorie {
+  width: 100%;
+  height: 100%;
+ /* background: url('') no-repeat center center/cover;
+  */
+  background-color: #0068b881;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.categorie .content {
+  width: 65%;
+  padding: 100px 0 0 30px;
+}
+.btn {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #fff;
+  color: #1017da;
+  cursor: pointer;
 }
 .btn:hover {
-    background-color: #1017da;
-    color: #fff;
+  background-color: #1017da;
+  color: #fff;
 }
-.promo {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  color:#1017da;
+/* Footer */
+.footer {
+  background: #3e3d3d;
+  color: #dbdbdb;
+  font-size: 12px;
+  padding: 20px 0;
 }
-  .footer {
-    background: #3e3d3d;
-    color: #dbdbdb;
-    font-size: 12px;
-    padding: 20px 0;    
-  }
-  .footer-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .footer div {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-  } 
-  .footer div i {
-    margin-right: 10px;
-  }
-  .footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    color: #dbdbdb;
 
-  }
-  .footer li {
-    margin-right: 30px;
-    margin-bottom: 20px;
-  } 
-  footer a {
-    color: #dbdbdb;
-  }
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer div i {
+  margin-right: 10px;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #dbdbdb;
+
+}
+
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #dbdbdb;
+}
