@@ -17,7 +17,7 @@ compareBtn.addEventListener("click", comparePrices);
   // Define search URLs for each site
   const searchUrls = {
     Tayda: `https://www.taydaelectronics.com/catalogsearch/result/?q=${searchTerm}`,
-    Amazon: `https://www.amazon.com/s?k=${searchTerm}`,
+    Amazon: `https://www.amazon.fr/s?k=${searchTerm}`,
     AliExpress: `https://www.aliexpress.com/wholesale?SearchText=${searchTerm}`,
   };
 
@@ -45,7 +45,7 @@ compareBtn.addEventListener("click", comparePrices);
             name = result.find("h2 a").text();
             price = parseFloat(
               result.find(".a-price-whole").first().text() +
-                "." +
+                "." + "&tag=" +
                 result.find(".a-price-fraction").first().text()
             );
           }
